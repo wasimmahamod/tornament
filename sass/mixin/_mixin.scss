@@ -1,0 +1,12 @@
+
+@mixin divd($w,$h,$bg){
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+@mixin font($fs,$fw,){
+    font-size: $fs;
+    font-weight: $fw;
+    font-family: 'Oswald', sans-serif;
+    
+}

@@ -1,0 +1,39 @@
+nav{
+    ul{
+      
+        li{
+            margin-right: 20px;
+            a{
+                font-family: 'Oswald', sans-serif;
+                color:#ffffff !important;
+                position: relative;
+                &::after{
+                    width: 0%;
+                    height: 2px;
+                    background: $pcolor;
+                    position: absolute;
+                    bottom: 0;
+                    left:8px;
+                    content: '';
+                    transition: .4s;
+                }
+                &:hover{
+                   
+                    color:$pcolor !important;
+                }
+                &:hover::after{
+                    width: 80%;
+                }
+              
+            }
+            .b{
+                color:#000 !important;
+            }
+          
+        }
+        .black{
+            color:#000 !important;
+            margin-left: 305px;
+        }
+    }
+}

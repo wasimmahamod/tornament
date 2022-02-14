@@ -1,0 +1,65 @@
+#schedule-part{
+    margin-top: 100px;
+    .item{
+        margin-top: 50px;
+        h1{
+            @include font(20px,500);
+            text-align:center
+        }
+        .item1{
+            height: 50px;
+            background: #ffcc33;
+            margin-left: 1px;
+            margin-bottom: 1px;
+           h3{
+            @include font(20px,400);
+            text-align: center;
+            line-height: 50px;
+           }
+        }
+        .item2{
+            height: 40px;
+            background: #fff;
+            margin-bottom: 1px;
+            border:none;
+            border-left: 1px solid #dddddd;
+            border-bottom: 1px solid #dddddd;
+
+            h4{
+                @include font(14px,400);
+                text-align: center;
+                line-height: 40px;
+               }
+        }
+        .item3{
+            height: 40px;
+            background: #fff;
+            margin-bottom: 1px;
+            border:none;
+            border-left: 1px solid #dddddd;
+            border-bottom: 1px solid #dddddd;
+            &:last-child{
+                border-right: 1px solid #dddddd;
+            }
+            h4{
+                @include font(14px,400);
+                text-align: center;
+                line-height: 40px;
+               }
+        }
+        .item4{
+            height: 40px;
+            background: #fff;
+            margin-bottom: 1px;
+            border:none;
+            border-right: 1px solid #dddddd;;
+            border-bottom: 1px solid #dddddd;
+            
+            h4{
+                @include font(14px,400);
+                text-align: center;
+                line-height: 40px;
+               }
+        }
+    }
+}

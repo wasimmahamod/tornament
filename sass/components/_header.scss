@@ -1,0 +1,100 @@
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top:70px;
+    &::after{
+        width: 39%;
+        height: 1px;
+        background: #d5dde1;
+        position: absolute;
+        top:40px;
+        left: 0;
+        content: '';
+    }
+    &::before{
+        width: 39%;
+        height: 1px;
+        background: #d5dde1;
+        position: absolute;
+        top:40px;
+        right: 0;
+        content: '';
+    }
+.top{
+    .welcome{
+        text-align: right;
+        h3{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14pt;
+            color:#ffffff;
+            position: relative;
+            // &::after{
+            //     width: 100%;
+            //     height: 1px;
+            //     background: #d5dde1;
+            //     position: absolute;
+            //     bottom: -10px;
+            //     left: 0;
+            //     content: '';
+            // }
+        }
+
+    }
+    .logo{
+        text-align: center;
+        
+        margin: -55px 0;
+      
+        
+
+    }
+    .login{
+        position: relative;
+        h2{
+            font-family: 'Oswald', sans-serif;
+            font-size: 14pt;
+            color:#020202;
+            margin-left: -20px;
+        }
+        .form{
+            border:none;
+            border-bottom: 1px solid black;
+            background: transparent;
+            width: 100%;
+            
+
+        }
+        // &::after{
+        //     width: 100%;
+        //     height: 1px;
+        //     background: #d5dde1;
+        //     position: absolute;
+        //     bottom: -10px;
+        //     left: -10px;
+        //     content: '';
+        // }
+        
+    }
+}
+    nav{
+        ul{
+          
+            li{
+                margin-right: 20px;
+                a{
+                    font-family: 'Oswald', sans-serif;
+                    color:#ffffff !important;
+                }
+                .b{
+                    color:#000 !important;
+                }
+              
+            }
+            .black{
+                color:#000 !important;
+                margin-left: 305px;
+            }
+        }
+    }
+}

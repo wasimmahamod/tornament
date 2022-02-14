@@ -1,0 +1,40 @@
+@import '../mixin/mixin';
+.main{
+    display: flex;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    text-align: center;
+    h2{
+        @include font(40px,500);
+        position: relative;
+        &::after{
+            width: 120px;
+            height: 1px;
+            background: #000;
+            position: absolute;
+            bottom: -35px;
+            left:39%;
+            content: '';
+        }
+        &::before{
+            width: 120px;
+            height: 1px;
+            background: #000;
+            position: absolute;
+            bottom: -35px;
+            right:39%;
+            content: '';
+        }
+    }
+   
+    
+}
+ul,li{
+    list-style: none;
+}

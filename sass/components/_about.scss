@@ -1,0 +1,128 @@
+#about-part{
+    margin-top: 100px;
+    position: relative;
+   
+  .about-slider{
+    .l{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right:20px;
+        z-index: 999;
+        border:2px solid #ffe596 !important;
+        background:#ffe596;
+        border:none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        transition: .4s;
+        &:hover{
+            background: #fff;;
+            
+        }
+        &:hover i{
+            color:#000;
+        }
+        
+        i{
+            font-size: 30px;
+            margin-left: 20px;
+            color:#000;
+            transition: .4s;
+            
+            
+        }
+      
+    }
+    .r{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        left:20px;
+        z-index: 999;
+        border:2px solid #fff !important;
+        background: transparent;
+        border:none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        transition: .4s;
+      i
+        &:hover{
+            background: #fff;;
+            
+        }
+        &:hover i{
+            color:#000;
+        }
+        i{
+            font-size: 30px;
+            margin-left: 20px;
+            color:#ffff;
+            transition: .4s;
+            
+        }
+    }
+
+      .about{
+          margin-top: 50px;
+          position: relative;
+        .bg-left{
+          
+            .bg{
+                width: 57%;
+                height: 415px;
+                background: #ffe596;
+                position: absolute;
+                top:75px;
+                left: 0;
+                z-index: -1;
+
+            }
+            .l-text{
+                margin-top: 115px;
+                h1{
+                    @include font(20px,500);
+                    margin-bottom: 30px;
+                    color:#222222;
+                }
+                p{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color:#82785c;
+                }
+                .pera{
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                }
+                a{
+                    padding: 20px;
+                    display: inline-block;
+                    background:#353535;
+                    border-radius: 5px;
+                    color:#ffffff;
+                    font-family: 'Raleway', sans-serif;
+                    transition: .4s;
+                    border: 1px solid #353535;
+                    margin-top: -20px;
+                    &:hover{
+                        background: transparent;
+                        border:1px solid #353535;
+                        color:#353535;
+                    }
+
+                }
+            }
+
+        }
+        .bg-right{
+           position: relative;
+        
+        }
+     
+      }
+  }
+}

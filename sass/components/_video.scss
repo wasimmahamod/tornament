@@ -1,0 +1,45 @@
+#video-part{
+    margin-top: 100px;
+   .video{
+       width: 100%;
+       height: 500px;
+       position: relative;
+        img{
+            width: 100%;
+            height: 100%
+        };
+     .overlay{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0,.5);
+        position: absolute;
+        top:0;
+        left:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text{
+            text-align: center;
+            h1{
+                font-family: 'Raleway', sans-serif;
+                font-size: 24px;
+                color:#ffffff;
+                margin-top: 10px;
+            }
+        }
+        i{
+            width: 70px;
+            height: 70px;
+            border:1px solid #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 70px;
+            font-size: 30px;
+            color:#ffffff;
+
+        }
+    }
+   }
+  
+
+}

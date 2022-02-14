@@ -1,0 +1,121 @@
+#propular-part{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 580px;
+    overflow: hidden;
+   
+  .main{
+      margin-top: 50px;
+      .nav{
+        button{
+            border:1px solid #dddddd;
+            
+            width: 270px;
+            height: 60px;
+            color: #444444;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            
+        }
+        .nav-link.active {
+            color: $pcolor;
+            background-color: #ffffff;
+        }
+        .titlenav{
+            border:none;
+            background:$pcolor;
+           @include font(20px ,500)
+        }
+      }
+    .middel-slider{
+        .middel{
+            text-align: center;
+            position: relative;
+            button{
+                width: 40px;
+                height: 40px;
+                border:none;
+                border:1px solid #000;
+                border-radius: 50%;
+                background:transparent;
+                transition: .4s;
+                i{
+                    color:#000;
+                }
+                &:hover{
+                    background: $pcolor;
+                }
+            
+            }
+            .box{
+                margin: 15px 0;;
+               
+               
+
+                .item{
+                    width: 80px;
+                    height: 80px;
+                    border:2px solid $pcolor;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    position: relative;
+                    left:50%;
+                    transform: translateX(-50%);
+                    transition: .4s;
+                  
+                   img{
+                       position: absolute;
+                       height: 400px;
+                       top:0;
+                       left:60%;
+                       transform: translateX(-50%);
+                   }
+                }
+            }
+            .slick-center{
+                .item{
+                    border-color: red;;
+                }
+            }
+            &::after{
+                width: 2px;
+                height: 80%;
+                background: url(../images/line-shape.png) no-repeat center;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                content: '';
+                z-index: -1;
+            }
+        }
+    }
+    .left-slider{
+        text-align: left;
+        .box{
+            height: 400px;
+            img{
+                height: 400px;
+                margin-left: -30px;
+            }
+            ul{
+                li{
+                    @include font(20px,400);
+                    position: relative;
+                    padding-left: 70px;
+                    margin:15px 0;
+                    color:#444444;
+                    
+                    span{
+                       
+                        display: inline-block;
+                        position: absolute;
+                        top:0;
+                        left:-40px;
+                    }
+                }
+            }
+        }
+    }
+  }
+}
